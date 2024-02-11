@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+
+    // mhs
     public function index(): string
     {
         return view('kemahasiswaan/pendaftar');
