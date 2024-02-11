@@ -34,7 +34,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-4">
                                         <a class="text-primary fw-bold" href="./index.html">Lupa Sandi?</a>
                                     </div>
-                                    <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Masuk</a>
+                                    <a href="/dashboard" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Masuk</a>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <p class="fs-4 mb-0 fw-bold">Belum memiliki akun?</p>
                                         <a class="text-primary fw-bold ms-2" href="./authentication-register.html">Daftar disini</a>

@@ -170,9 +170,11 @@
             </div>
         </div>
         <!-- end right col -->
-        <div class="mb-3 text-center mt-4">
-            <button type="submit" style="color: #fff;" class="btn btncustompendaftaran2">Simpan</button>
-        </div>
+        <a href="/dashboard">
+            <div class="mb-3 text-center mt-4">
+                <button type="submit" style="color: #fff;" class="btn btncustompendaftaran2">Simpan</button>
+            </div>
+        </a>
     </div>
     <!-- end identitas -->
 

@@ -232,11 +232,13 @@
                 <div id="emailHelp" class="form-text"></div>
             </div>
         </div>
-        <div class="col-8">
-            <div class="mb-3 text-center mt-4">
-                <button type="submit" style="color: #fff;" class="btn btncustompendaftaran1">Simpan</button>
+        <a href="/pendaftar2">
+            <div class="col-8">
+                <div class="mb-3 text-center mt-4">
+                    <button type="submit" style="color: #fff;" class="btn btncustompendaftaransimpanlanjut">Simpan & Lanjut</button>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
     <!-- end data orangtua -->
 
