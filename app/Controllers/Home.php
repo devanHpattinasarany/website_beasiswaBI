@@ -6,6 +6,10 @@ class Home extends BaseController
 {
 
     // mhs
+    public function landing(): string
+    {
+        return view('landing_page');
+    }
     public function index(): string
     {
         return view('kemahasiswaan/pendaftar');

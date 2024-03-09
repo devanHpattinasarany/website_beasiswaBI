@@ -1,54 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BeasiswaBI &mdash; Login</title>
-    <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>/assets/images/logos/faviconbi.png" />
-    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+
+    <title>Masuk</title>
+
+    <link rel="stylesheet" href="assets/css/landing_pageLR.css">
+
 </head>
 
 <body>
-    <!--  Body Wrapper -->
-    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
-        <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
-            <div class="d-flex align-items-center justify-content-center w-100">
-                <div class="row justify-content-center w-100">
-                    <div class="col-md-8 col-lg-6 col-xxl-3">
-                        <div class="card mb-0">
-                            <div class="card-body">
-                                <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <h1 class="fw-bold">Masuk</h1>
-                                </a>
-                                <!-- <p class="text-center">Your Social Campaigns</p> -->
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label fontroboto">Username</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="exampleInputPassword1" class="form-label fontroboto">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <a class="text-primary fw-bold" href="./index.html">Lupa Sandi?</a>
-                                    </div>
-                                    <a href="/dashboard" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Masuk</a>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <p class="fs-4 mb-0 fw-bold">Belum memiliki akun?</p>
-                                        <a class="text-primary fw-bold ms-2" href="./authentication-register.html">Daftar disini</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <!-------Navbar & Hero Section----->
+
+    <section>
+        <nav>
+            <a href="index.html"> <img src="assets/images/landing_pageLR/logo BI.svg" width="10%" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-arrow-left" onclick="hidenMenu()"></i>
+                <!-- <ul>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#informasi">Informasi</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#komunitas">Komunitas</a></li>
+                </ul>
             </div>
+
+            <div class="masuk-btn">
+                <a href="login.html">Masuk</a>
+            </div> -->
+
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-------End Navbar & Hero Section----->
+
+
+    <!-------Login------->
+
+    <section class="login">
+        <img src="assets/images/landing_pageLR/login.svg" alt="">
+        <div>
+            <div class="login-col">
+                <form action="">
+                    <h1>Masuk</h1>
+
+                    <label for="">Username</label>
+                    <input type="text" placeholder="Example@gmail.com">
+
+                    <label for="">Password</label>
+                    <input type="text" placeholder="Password">
+
+                    <a href="">Lupa Password?</a>
+
+                    <button>Masuk</button>
+
+                </form>
+            </div>
+            <p>
+                Belum memiliki akun? <a href="Registrasi.html">Daftar disini</a>
+            </p>
+
         </div>
-    </div>
-    <script src="<?= base_url() ?>/assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="<?= base_url() ?>/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+
+    <!-------End Login------->
+
+
+    <section class="footer">
+        <div class="footer-col">
+            <p> Copyright 2024</p>
+        </div>
+    </section>
+
+    <script>
+        var nav = document.querySelector("nav")
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 20) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        });
+    </script>
+
 </body>
 
 </html>

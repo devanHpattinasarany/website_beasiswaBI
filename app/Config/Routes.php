@@ -6,6 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+$routes->get('/landingpage', 'Home::landing');
 $routes->get('/', 'Home::login');
 $routes->get('/login', 'Home::login');
 $routes->get('/dashboard', 'Home::dashboard');
