@@ -651,8 +651,8 @@ h3 {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
 }
 
@@ -672,7 +672,7 @@ h3 {
 
 .regis-col {
   width: 312px;
-  height: 600px;
+  height: 685px;
   display: flex;
   align-items: center;
 }

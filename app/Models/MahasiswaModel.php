@@ -8,11 +8,11 @@ class MahasiswaModel extends Model
 {
     protected $table            = 'mahasiswas';
     protected $primaryKey = 'npm_nim';
-    protected $useAutoIncrement = true;
+    // protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['npm_nim', 'user_id', 'nama_lengkap', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'alamat', 'asal_universitas', 'program_studi', 'instagram', 'facebook', 'no_whatsapp'];
+    protected $allowedFields = ['npm_nim', 'user_id', 'id_reviewer', 'nama_lengkap', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'alamat', 'asal_universitas', 'program_studi', 'instagram', 'facebook', 'no_whatsapp'];
 
     public function user()
     {
