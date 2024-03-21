@@ -12,7 +12,7 @@ class PendaftaranModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['id_mahasiswa', 'id_reviewer', 'status', 'tempat_lahir', 'golongan_darah', 'suku_bangsa', 'ip_semester_terakhir', 'provinsi', 'kabupaten', 'alamat_domisili', 'nama_ayah', 'pekerjaan_ayah', 'nama_ibu', 'pekerjaan_ibu', 'minat', 'bakat', 'ketrampilan_hidup', 'potensi_dalam_diri', 'pengalaman_organisasi', 'motivasi', 'alasan_motivasi', 'file_ktp', 'file_ktm', 'file_khs', 'file_surat_rekomendasi', 'file_cv', 'file_motivation_letter', 'file_surat_keterangan_beasiswa', 'file_sktm', 'file_sertifikat_penghargaan', 'file_sertifikat_magang', 'file_sertifikat_nasional_internasional'];
+    protected $allowedFields = ['id_mahasiswa', 'id_reviewer', 'status', 'minat', 'bakat', 'ketrampilan_hidup', 'potensi_dalam_diri', 'pengalaman_organisasi', 'motivasi', 'alasan_motivasi', 'file_ktp', 'file_ktm', 'file_khs', 'file_surat_rekomendasi', 'file_cv', 'file_motivation_letter', 'file_surat_keterangan_beasiswa', 'file_sktm', 'file_sertifikat_penghargaan', 'file_sertifikat_magang', 'file_sertifikat_nasional_internasional'];
 
     public function mahasiswa()
     {

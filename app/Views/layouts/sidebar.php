@@ -1,5 +1,5 @@
 <li class="sidebar-item">
-    <a class="sidebar-link" href="/dashboard" aria-expanded="false">
+    <a class="sidebar-link" href="/" aria-expanded="false">
         <span>
             <img src="<?= base_url() ?>/assets/images/icons/dashboard.svg" alt="">
         </span>
@@ -7,7 +7,7 @@
     </a>
 </li>
 <li class="sidebar-item">
-    <a class="sidebar-link" href="/pendaftar1" aria-expanded="false">
+    <a class="sidebar-link" href="/pendaftar/hal-1" aria-expanded="false">
         <span>
             <img src="<?= base_url() ?>/assets/images/icons/pendaftaran.svg" alt="">
         </span>

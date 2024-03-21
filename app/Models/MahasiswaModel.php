@@ -12,7 +12,7 @@ class MahasiswaModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['npm_nim', 'user_id', 'id_reviewer', 'nama_lengkap', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'alamat', 'asal_universitas', 'program_studi', 'instagram', 'facebook', 'no_whatsapp'];
+    protected $allowedFields = ['npm_nim', 'user_id', 'id_reviewer', 'nama_lengkap', 'tempat_lahir', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'gol_darah', 'suku_bangsa', 'asal_universitas', 'fakultas', 'program_studi', 'ip_semester_terakhir', 'provinsi', 'kabupaten', 'alamat_ktp', 'alamat_domisili', 'email', 'no_whatsapp', 'instagram', 'facebook', 'nama_ayah', 'pekerjaan_ayah', 'nama_ibu', 'pekerjaan_ibu'];
 
     public function user()
     {

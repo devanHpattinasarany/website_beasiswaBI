@@ -38,7 +38,7 @@
             </div>
 
             <div class="masuk-btn">
-                <a href="login.html">Masuk</a>
+                <a href="/login">Masuk</a>
             </div>
 
             <i class="fa fa-bars" onclick="showMenu()"></i>

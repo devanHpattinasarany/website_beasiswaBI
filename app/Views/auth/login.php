@@ -11,7 +11,7 @@
 
     <section>
         <nav>
-            <a href="index.html"> <img src="<?= base_url() ?>/assets/images/landing_pageLR/logo BI.svg" width="10%" alt=""></a>
+            <a href="/"> <img src="<?= base_url() ?>/assets/images/landing_pageLR/logo BI.svg" width="10%" alt=""></a>
             <div class="nav-link" id="navLink">
                 <i class="fa fa-arrow-left" onclick="hidenMenu()"></i>
 
