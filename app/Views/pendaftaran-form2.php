@@ -76,8 +76,8 @@
                     </div>
                     <div class="col-12" style="margin-top: -20px;">
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="namalengkap" class="form-label fontroboto300">Surat Keterangan Tidak Mampu (SKTM)</label>
-                            <input type="file" class="form-control bordercustomformp" id="namalengkap" aria-describedby="emailHelp">
+                            <label for="file_sktm" class="form-label fontroboto300">Surat Keterangan Tidak Mampu (SKTM)</label>
+                            <input type="file" class="form-control bordercustomformp" id="file_sktm" name="file_sktm" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text"></div>
                         </div>
                     </div>
@@ -117,26 +117,26 @@
                     <div class="col-12">
                         <h6 class="fontrobotpendaftaran-700">Minat, Bakat dan Keterampilan</h6>
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300">Minat</label>
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="2"></textarea>
+                            <label for="minat" class="form-label fontroboto300">Minat</label>
+                            <textarea class="form-control" id="minat" name="minat" rows="2"></textarea>
                         </div>
                     </div>
                     <div class="col-12" style="margin-top: -5px;">
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300">Bakat</label>
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="2"></textarea>
+                            <label for="bakat" class="form-label fontroboto300">Bakat</label>
+                            <textarea class="form-control" id="bakat" name="bakat" rows="2"></textarea>
                         </div>
                     </div>
                     <div class="col-12" style="margin-top: -5px;">
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300">ketrampilan Hidup</label>
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="2"></textarea>
+                            <label for="ketrampilan_hidup" class="form-label fontroboto300">ketrampilan Hidup</label>
+                            <textarea class="form-control" id="ketrampilan_hidup" name="ketrampilan_hidup" rows="2"></textarea>
                         </div>
                     </div>
                     <div class="col-12" style="margin-top: -5px;">
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300">Potensi Dalam Diri</label>
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="2"></textarea>
+                            <label for="potensi_dalam_diri" class="form-label fontroboto300">Potensi Dalam Diri</label>
+                            <textarea class="form-control" id="potensi_dalam_diri" name="potensi_dalam_diri" rows="2"></textarea>
                         </div>
                     </div>
                     <!-- end Minat, Bakat dan Keterampilan -->
@@ -144,7 +144,7 @@
                     <div class="col-12" style="margin-top: 25px;">
                         <h6 class="fontrobotpendaftaran-700 mb-2">Pengalaman Organisasi</h6>
                         <div class=" mt-3 mb-3 ms-2">
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="4"></textarea>
+                            <textarea class="form-control" id="pengalaman_organisasi" name="pengalaman_organisasi" rows="4"></textarea>
                         </div>
                     </div>
                     <!-- end Pengalaman Organisasi -->
@@ -152,23 +152,23 @@
                     <div class="col-12" style="margin-top: 30px;">
                         <h6 class="fontrobotpendaftaran-700 mb-2">Motivasi</h6>
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300" style="font-weight: 600;">APAKAH ANDA SIAP DAN BERPERAN AKTIF DALAM KEPENGURUSAN DAN KEGIATAN KOMUNITAS PENERIMA BEASISWA BANK INDONESIA </label>
+                            <label for="motivasi" class="form-label fontroboto300" style="font-weight: 600;">APAKAH ANDA SIAP DAN BERPERAN AKTIF DALAM KEPENGURUSAN DAN KEGIATAN KOMUNITAS PENERIMA BEASISWA BANK INDONESIA </label>
                         </div>
                     </div>
                     <div class="col-5 ms-2">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" style="margin-left: 7px;margin-top: 2px;font-size: 15px;" for="exampleCheck1">Ya</label>
+                        <input type="checkbox" class="form-check-input" id="ya" name="motivasi" value="Ya">
+                        <label class="form-check-label" style="margin-left: 7px;margin-top: 2px;font-size: 15px;" for="ya">Ya</label>
                     </div>
                     <div class="col-5">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" style="margin-left: 7px;margin-top: 2px;font-size: 15px;" for="exampleCheck1">Tidak</label>
+                        <input type="checkbox" class="form-check-input" id="Tidak" name="motivasi" value="Tidak">
+                        <label class="form-check-label" style="margin-left: 7px;margin-top: 2px;font-size: 15px;" for="Tidak">Tidak</label>
                     </div>
                     <!-- end Motivasi -->
                     <!-- Potensi dalam diri -->
                     <div class="col-12" style="margin-top: 20px;">
                         <div class=" mt-3 mb-3 ms-2">
-                            <label for="alamat_lengkap_sktp" class="form-label fontroboto300">Potensi Dalam Diri</label>
-                            <textarea class="form-control" id="alamat_lengkap_sktp" name="alamat_lengkap_sktp" rows="2"></textarea>
+                            <label for="alasan_motivasi" class="form-label fontroboto300">Alasan</label>
+                            <textarea class="form-control" id="alasan_motivasi" name="alasan_motivasi" rows="2"></textarea>
                         </div>
                     </div>
                     <!-- end potensi dalam diri -->
