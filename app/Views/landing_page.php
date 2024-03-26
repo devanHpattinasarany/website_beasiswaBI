@@ -57,7 +57,7 @@
                 <p>"Kantor Perwakilan Wilayah Provinsi Maluku"</p>
 
                 <div class="hero-btn">
-                    <a href="Registrasi.html">Daftar</a>
+                    <a href="/register">Daftar</a>
                 </div>
 
             </div>

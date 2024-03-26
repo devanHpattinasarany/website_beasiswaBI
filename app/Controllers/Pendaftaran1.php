@@ -3,21 +3,33 @@
 namespace App\Controllers;
 
 use App\Models\MahasiswaModel;
+use App\Models\PendaftaranModel;
 
 class Pendaftaran1 extends BaseController
 {
 
     public function index(): string
     {
+
+
         // Ambil data user aktif
         $user = user();
 
         // Mengambil data Mahasiswa yang terkait dengan pengguna yang sedang aktif
         $mahasiswaModel = new MahasiswaModel();
         $mahasiswa = $mahasiswaModel->where('user_id', $user->id)->first();
+        $primaryKeyMhs = $mahasiswa['npm_nim'];
+        // Lakukan pengecekan apakah data pendaftaran sudah ada untuk pengguna saat ini
+        $pendaftaranModel = new PendaftaranModel();
 
-        // Mengirim data Mahasiswa ke view
-        return view('pendaftaran-form1', ['mahasiswa' => $mahasiswa]);
+        $dataPendaftaran = $pendaftaranModel->where('id_mahasiswa', $primaryKeyMhs)->first();
+        if ($dataPendaftaran) {
+            // Mengirim data Mahasiswa ke view
+            return view('pendaftaran-info', ['dataPendaftaran' => $dataPendaftaran]);
+        } else {
+            // Mengirim data Mahasiswa ke view
+            return view('pendaftaran-form1', ['mahasiswa' => $mahasiswa], ['dataPendaftaran' => $dataPendaftaran]);
+        }
     }
 
     public function store()

@@ -4,6 +4,9 @@
 <title>BeasiswaBI &mdash; Pendaftaran</title>
 <?= $this->endSection() ?>
 
+
+
+
 <?= $this->section('content') ?>
 <div class="container-fluid">
 
@@ -131,17 +134,18 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-4" style="margin-top: 18px;">
-                <div class="mt-3 mb-3 ms-2">
-                    <label for="npm_nim" class="form-label fontroboto300">NPM/NIM</label>
-                    <input type="text" class="form-control bordercustomformp" id="npm_nim" aria-describedby="npmNimHelp" value="<?= $mahasiswa['npm_nim'] ?>" disabled>
-                    <div id="npmNimHelp" class="form-text"></div>
-                    <div class="invalid-feedback">
-                        NPM/NIM wajib diisi.
+            <?php if (in_groups('mahasiswa')) : ?>
+                <div class="col-4" style="margin-top: 18px;">
+                    <div class="mt-3 mb-3 ms-2">
+                        <label for="npm_nim" class="form-label fontroboto300">NPM/NIM</label>
+                        <input type="text" class="form-control bordercustomformp" id="npm_nim" aria-describedby="npmNimHelp" value="<?= $mahasiswa['npm_nim'] ?>" disabled>
+                        <div id="npmNimHelp" class="form-text"></div>
+                        <div class="invalid-feedback">
+                            NPM/NIM wajib diisi.
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endif; ?>
             <div class="col-4"></div>
             <div class="col-4">
                 <div class="mb-3 ms-2">

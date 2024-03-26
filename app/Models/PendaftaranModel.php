@@ -16,7 +16,7 @@ class PendaftaranModel extends Model
 
     public function mahasiswa()
     {
-        return $this->belongsTo(MahasiswaModel::class, 'id_mahasiswa', 'user_id');
+        return $this->belongsTo(MahasiswaModel::class, 'id_mahasiswa', 'npm_nim');
     }
 
     public function reviewer()
@@ -49,4 +49,29 @@ class PendaftaranModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    function getAll()
+    {
+        // $builder = $this->db->table('listform');
+        // $builder->join('kategori', 'kategori.id_kategori = listform.id_kategori');
+        // $builder->join('unit_kerja', 'unit_kerja.id_unit_kerja = listform.id_unit_kerja');
+        // $builder->join('usersBM', 'usersBM.id_usersBM = listform.id_usersBM');
+        // $query = $builder->get();
+        // return $query->getResult();
+
+
+        $builder = $this->db->table('pendaftarans');
+        $builder->join('mahasiswas', 'mahasiswas.npm_nim = pendaftarans.id_mahasiswa');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
+    public function getAllByReviewer($idReviewer)
+    {
+        $builder = $this->db->table('pendaftarans');
+        $builder->where('pendaftarans.id_reviewer', $idReviewer); // Menentukan tabel 'pendaftarans'
+        $builder->join('mahasiswas', 'mahasiswas.npm_nim = pendaftarans.id_mahasiswa');
+        $query = $builder->get();
+        return $query->getResult();
+    }
 }
