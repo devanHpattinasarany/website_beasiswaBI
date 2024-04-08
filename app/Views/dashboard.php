@@ -16,12 +16,10 @@
                     Hallo,<br><?= user()->username; ?>
                 </h2>
                 <p class="ukimld"><?= $asalKampus; ?>
-
                     <?php if ($cek == 0) : ?>
                         | <span class="text-danger fst-italic">( Lengkapi data )
                         </span>
                     <?php endif; ?>
-
                 </p>
             </div>
         </div>
