@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\MahasiswaModel;
+
 class Home extends BaseController
 {
 
@@ -11,7 +13,36 @@ class Home extends BaseController
     }
     public function dashboard(): string
     {
-        return view('dashboard');
+        // Ambil data user aktif
+        $user = user();
+
+        // Mengambil data Mahasiswa yang terkait dengan pengguna yang sedang aktif
+        $mahasiswaModel = new MahasiswaModel();
+        $mahasiswa = $mahasiswaModel->where('user_id', $user->id)->first();
+        $reviewer = $mahasiswa['id_reviewer'];
+        $nama_lengkap = $mahasiswa['nama_lengkap'];
+
+        if ($nama_lengkap == null) {
+            $cek = false;
+        } else {
+            $cek = true;
+        }
+
+
+        if ($reviewer == 1) {
+            $asalKampus = 'Universitas Pattimura';
+        } elseif ($reviewer == 2) {
+            $asalKampus = 'IAIN Ambon';
+        } else {
+            $asalKampus = 'Universitas Kristen Indonesia Maluku';
+        }
+
+        $data = [
+            'cek' => $cek,
+            'asalKampus' => $asalKampus
+        ];
+
+        return view('dashboard', $data);
     }
 
     public function pendaftar1(): string

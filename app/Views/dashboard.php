@@ -6,7 +6,6 @@
 
 <?= $this->section('content') ?>
 <div class="container-fluid">
-
     <div class="row">
         <div class="col">
             <div class="mt-2">
@@ -16,8 +15,14 @@
                 <h2 class="fw-bolder hjfsminheight">
                     Hallo,<br><?= user()->username; ?>
                 </h2>
-                <p class="ukimld">Universitas Kristen Indonesia Maluku | <span class="text-danger fst-italic">( Lengkapi data )
-                    </span></p>
+                <p class="ukimld"><?= $asalKampus; ?>
+
+                    <?php if ($cek == 0) : ?>
+                        | <span class="text-danger fst-italic">( Lengkapi data )
+                        </span>
+                    <?php endif; ?>
+
+                </p>
             </div>
         </div>
     </div>
